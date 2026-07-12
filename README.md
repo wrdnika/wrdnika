@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg" alt="wrdnika — Fullstack Developer" width="100%" />
+  <img src="https://raw.githubusercontent.com/wrdnika/wrdnika/main/banner.svg?sanitize=true" alt="wrdnika - Fullstack Developer" width="100%" />
 </p>
 
 <p align="center">
