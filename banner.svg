@@ -1,0 +1,279 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">wrdnika  Fullstack Developer</title>
+  
+  <defs>
+    <!-- Core palette -->
+    <linearGradient id="void" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070b"/>
+      <stop offset="45%" stop-color="#0a1018"/>
+      <stop offset="100%" stop-color="#061018"/>
+    </linearGradient>
+
+    <radialGradient id="auroraL" cx="18%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#1ee8c4" stop-opacity="0.38"/>
+      <stop offset="45%" stop-color="#0ea5a4" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0ea5a4" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="auroraR" cx="82%" cy="22%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="auroraC" cx="50%" cy="110%" r="60%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="scan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5eead4" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e8fff9"/>
+      <stop offset="35%" stop-color="#5eead4"/>
+      <stop offset="65%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#f0fdfa"/>
+    </linearGradient>
+
+    <linearGradient id="nameSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animate attributeName="x1" values="-100%;100%" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="4.5s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14b8a6" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#67e8f9"/>
+      <stop offset="80%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="floor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#67e8f9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#5eead4" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.045 0" in="n"/>
+    </filter>
+
+    <clipPath id="frame">
+      <rect width="1200" height="420" rx="18"/>
+    </clipPath>
+
+    <!-- Perspective grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#5eead4" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="fadeGrid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0"/>
+      <stop offset="35%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+
+    <mask id="gridMask">
+      <rect width="1200" height="420" fill="url(#fadeGrid)"/>
+    </mask>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Base -->
+    <rect width="1200" height="420" fill="url(#void)"/>
+    <rect width="1200" height="420" fill="url(#auroraL)"/>
+    <rect width="1200" height="420" fill="url(#auroraR)"/>
+    <rect width="1200" height="420" fill="url(#auroraC)"/>
+
+    <!-- Soft grain -->
+    <rect width="1200" height="420" filter="url(#noise)" opacity="0.55"/>
+
+    <!-- Orbital rings -->
+    <g opacity="0.35" filter="url(#softGlow)">
+      <ellipse cx="980" cy="90" rx="160" ry="160" fill="none" stroke="#5eead4" stroke-width="1" stroke-opacity="0.35">
+        <animateTransform attributeName="transform" type="rotate" from="0 980 90" to="360 980 90" dur="48s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="980" cy="90" rx="118" ry="118" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="6 10">
+        <animateTransform attributeName="transform" type="rotate" from="360 980 90" to="0 980 90" dur="32s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle cx="980" cy="90" r="4" fill="#67e8f9">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g opacity="0.28" filter="url(#softGlow)">
+      <ellipse cx="160" cy="320" rx="140" ry="140" fill="none" stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.4" stroke-dasharray="3 12">
+        <animateTransform attributeName="transform" type="rotate" from="0 160 320" to="-360 160 320" dur="56s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Floating nodes / constellation -->
+    <g fill="#5eead4" opacity="0.7">
+      <circle cx="92" cy="78" r="1.6"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="210" cy="140" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" begin="0.4s" repeatCount="indefinite"/></circle>
+      <circle cx="340" cy="56" r="1.8"><animate attributeName="opacity" values="0.15;0.85;0.15" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
+      <circle cx="1080" cy="250" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" begin="0.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1140" cy="160" r="1.2"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.8s" begin="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="860" cy="360" r="1.4"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.8s" begin="0.2s" repeatCount="indefinite"/></circle>
+      <circle cx="70" cy="240" r="1.1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" begin="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Connection lines -->
+    <g stroke="#5eead4" stroke-width="0.7" fill="none" opacity="0.18">
+      <path d="M92 78 L210 140 L340 56">
+        <animate attributeName="stroke-opacity" values="0.08;0.35;0.08" dur="5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M1080 250 L1140 160 L1020 120">
+        <animate attributeName="stroke-opacity" values="0.05;0.3;0.05" dur="4.2s" begin="0.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Perspective floor grid -->
+    <g mask="url(#gridMask)" opacity="0.55">
+      <g transform="translate(0,210) skewX(-28) scale(1,0.55)">
+        <rect x="-80" y="0" width="1400" height="420" fill="url(#grid)"/>
+        <rect x="-80" y="0" width="1400" height="420" fill="url(#floor)"/>
+      </g>
+    </g>
+
+    <!-- Vertical scan sweep -->
+    <rect x="0" y="-120" width="1200" height="90" fill="url(#scan)" opacity="0.9">
+      <animate attributeName="y" values="-120;430" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Corner brackets -->
+    <g stroke="#5eead4" stroke-width="1.5" fill="none" opacity="0.55" filter="url(#glow)">
+      <path d="M36 70 V36 H70"/>
+      <path d="M1130 36 H1164 V70"/>
+      <path d="M36 350 V384 H70"/>
+      <path d="M1130 384 H1164 V350"/>
+    </g>
+
+    <!-- Top status bar -->
+    <g transform="translate(60,42)">
+      <rect width="220" height="28" rx="14" fill="#0f172a" fill-opacity="0.55" stroke="#334155" stroke-opacity="0.5"/>
+      <circle cx="18" cy="14" r="4" fill="#34d399">
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="32" y="18" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.5">SYSTEM ONLINE</text>
+    </g>
+
+    <!-- Right meta chip -->
+    <g transform="translate(920,42)">
+      <rect width="220" height="28" rx="14" fill="#0f172a" fill-opacity="0.55" stroke="#334155" stroke-opacity="0.5"/>
+      <text x="110" y="18" text-anchor="middle" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2">ID :: WRDNIKA.DEV</text>
+    </g>
+
+    <!-- Eyebrow -->
+    <text x="600" y="118" text-anchor="middle" fill="#5eead4" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="8" opacity="0.9">
+      FULLSTACK DEVELOPER
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="3.5s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- Accent rule under eyebrow -->
+    <rect x="470" y="130" width="260" height="1.5" rx="1" fill="url(#bar)" filter="url(#glow)">
+      <animate attributeName="width" values="80;260;80" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="560;470;560" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Hero name -->
+    <text x="600" y="230" text-anchor="middle" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="6" fill="url(#nameGrad)" filter="url(#textGlow)">
+      wrdnika
+    </text>
+    <!-- Sheen overlay on name -->
+    <text x="600" y="230" text-anchor="middle" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="6" fill="url(#nameSheen)" opacity="0.9">
+      wrdnika
+    </text>
+
+    <!-- Tagline -->
+    <text x="600" y="278" text-anchor="middle" fill="#94a3b8" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" letter-spacing="1.5" font-style="italic">
+      Simplicity is the soul of efficiency.
+    </text>
+
+    <!-- Bottom tech ribbon -->
+    <g transform="translate(0,330)">
+      <rect x="180" y="0" width="840" height="42" rx="21" fill="#020617" fill-opacity="0.65" stroke="url(#edge)" stroke-width="1"/>
+      <text x="600" y="26" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="2.2" fill="#64748b">
+        <tspan fill="#5eead4">FLUTTER</tspan>
+        <tspan fill="#334155">  �  </tspan>
+        <tspan fill="#7dd3fc">REACT</tspan>
+        <tspan fill="#334155">  �  </tspan>
+        <tspan fill="#5eead4">NEXT.JS</tspan>
+        <tspan fill="#334155">  �  </tspan>
+        <tspan fill="#7dd3fc">NODE</tspan>
+        <tspan fill="#334155">  �  </tspan>
+        <tspan fill="#5eead4">LARAVEL</tspan>
+        <tspan fill="#334155">  �  </tspan>
+        <tspan fill="#7dd3fc">POSTGRES</tspan>
+      </text>
+    </g>
+
+    <!-- Floating code glyphs -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#5eead4" opacity="0.22">
+      <text x="80" y="180">&lt;/&gt;</text>
+      <text x="1080" y="310">{ }</text>
+      <text x="150" y="360">=&gt;</text>
+      <text x="1040" y="200">fn()</text>
+    </g>
+
+    <!-- Ambient drifting orbs -->
+    <g filter="url(#softGlow)">
+      <circle cx="240" cy="200" r="3" fill="#2dd4bf" opacity="0.7">
+        <animate attributeName="cy" values="200;170;200" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0.85;0.3" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="980" cy="280" r="2.5" fill="#38bdf8" opacity="0.7">
+        <animate attributeName="cy" values="280;250;280" dur="5s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0.9;0.25" dur="5s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="720" cy="150" r="2" fill="#99f6e4" opacity="0.6">
+        <animate attributeName="cx" values="720;740;720" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.2;0.75;0.2" dur="7s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Bottom edge light -->
+    <rect x="0" y="418" width="1200" height="2" fill="url(#edge)"/>
+    <!-- Top edge light -->
+    <rect x="0" y="0" width="1200" height="2" fill="url(#edge)" opacity="0.6"/>
+  </g>
+</svg>

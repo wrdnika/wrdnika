@@ -1,10 +1,9 @@
-<h1 align="center">Hi, I'm wrdnika.</h1>
-<h3 align="center">Fullstack Developer</h3>
+<p align="center">
+  <img src="./banner.svg" alt="wrdnika — Fullstack Developer" width="100%" />
+</p>
 
 <p align="center">
   Currently juggling everything at work while deepening my stack.
-  <br>
-  <i>"Simplicity is the soul of efficiency."</i>
 </p>
 
 <p align="center">
