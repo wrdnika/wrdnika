@@ -37,6 +37,10 @@
 
 ### 📊 GitHub Stats
 <p align="left">
-  <!-- <img src="https://github-readme-stats.vercel.app/api?username=wrdnika&show_icons=true&theme=graywhite&hide_border=true" height="150" alt="stats graph" /> -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wrdnika&layout=compact&theme=graywhite&hide_border=true" height="150" alt="languages graph" />
+<a href="https://github.com/luthfiadilal">
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=wrdnika&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=wrdnika&layout=compact&layout=compact&theme=algolia"/>
+</a>
 </p>
+## Github Statistic
+
