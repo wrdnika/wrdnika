@@ -39,9 +39,9 @@
 <p align="left">
 <a href="https://github.com/wrdnika">
   <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Diallo222&theme=dark&background=0D1117&ring=EC0484&fire=EC0484&currStreakLabel=9C9C9C&sideLabels=9C9C9C&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&hide_border=true&count_private=true" alt="GitHub Streak" />
-</p>
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=wrdnika&layout=compact&layout=compact&theme=algolia"/>
+    <img src="https://streak-stats.demolab.com/?user=wrdnika&theme=dark&background=0D1117&ring=EC0484&fire=EC0484&currStreakLabel=9C9C9C&sideLabels=9C9C9C&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E&hide_border=true&count_private=true" alt="GitHub Streak" />
+    <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=wrdnika&layout=compact&layout=compact&theme=algolia"/>
+  </p>
 </a>
 </p>
 ## Github Statistic
